@@ -1,0 +1,12 @@
+com\springsecurity\TestProject\controller\UserController.class
+com\springsecurity\TestProject\repository\UserRepo.class
+com\springsecurity\TestProject\config\JwtFilter.class
+com\springsecurity\TestProject\model\UserPrincipal.class
+com\springsecurity\TestProject\config\SecurityConfig.class
+com\springsecurity\TestProject\model\Users.class
+com\springsecurity\TestProject\controller\StudentController.class
+com\springsecurity\TestProject\TestProjectApplication.class
+com\springsecurity\TestProject\service\MyUserDetailsService.class
+com\springsecurity\TestProject\service\UserService.class
+com\springsecurity\TestProject\model\Student.class
+com\springsecurity\TestProject\service\JWTService.class

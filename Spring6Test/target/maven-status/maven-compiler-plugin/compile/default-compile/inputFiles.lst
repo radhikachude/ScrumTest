@@ -1,0 +1,12 @@
+C:\POC Practice\Spring6Test\src\main\java\com\springsecurity\TestProject\config\JwtFilter.java
+C:\POC Practice\Spring6Test\src\main\java\com\springsecurity\TestProject\config\SecurityConfig.java
+C:\POC Practice\Spring6Test\src\main\java\com\springsecurity\TestProject\controller\StudentController.java
+C:\POC Practice\Spring6Test\src\main\java\com\springsecurity\TestProject\controller\UserController.java
+C:\POC Practice\Spring6Test\src\main\java\com\springsecurity\TestProject\model\Student.java
+C:\POC Practice\Spring6Test\src\main\java\com\springsecurity\TestProject\model\UserPrincipal.java
+C:\POC Practice\Spring6Test\src\main\java\com\springsecurity\TestProject\model\Users.java
+C:\POC Practice\Spring6Test\src\main\java\com\springsecurity\TestProject\repository\UserRepo.java
+C:\POC Practice\Spring6Test\src\main\java\com\springsecurity\TestProject\service\JWTService.java
+C:\POC Practice\Spring6Test\src\main\java\com\springsecurity\TestProject\service\MyUserDetailsService.java
+C:\POC Practice\Spring6Test\src\main\java\com\springsecurity\TestProject\service\UserService.java
+C:\POC Practice\Spring6Test\src\main\java\com\springsecurity\TestProject\TestProjectApplication.java
