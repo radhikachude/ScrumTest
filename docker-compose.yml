@@ -1,7 +1,7 @@
 version: '3'
 services:
   EurekaServer:
-    image: EurekaServer:latest
+    image: eurekaserver:latest
     build:
       context: ./EurekaServer
       dockerfile: Dockerfile
@@ -9,14 +9,14 @@ services:
       - "8761:8761"
 
   ScrumMasterDashBoard:
-    image: ScrumMasterDashBoard:latest
+    image: scrummasterdashBoard:latest
     build:
       context: ./ScrumMasterDashBoard
       dockerfile: Dockerfile
     ports:
       - "8081:8080"
     environment:
-      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://EurekaServer:8761/eureka/
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eurekaserver:8761/eureka/
 
   Spring6Test:
     image: Spring6Test:latest
@@ -26,4 +26,4 @@ services:
     ports:
       - "8082:8080"
     environment:
-      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://EurekaServer:8761/eureka/
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eurekaserver:8761/eureka/
