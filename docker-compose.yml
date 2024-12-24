@@ -1,6 +1,6 @@
 version: '3'
 services:
-  eureka-server:
+  EurekaServer:
     image: eureka-server:latest
     build:
       context: ./eureka-server
@@ -8,7 +8,7 @@ services:
     ports:
       - "8761:8761"
 
-  team-management:
+ScrumMasterDashBoard:
     image: team-management:latest
     build:
       context: ./team-management
@@ -18,8 +18,8 @@ services:
     environment:
       - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
 
-  sprint-management:
-    image: sprint-management:latest
+  Spring6Test:
+    image: sprint-security-management:latest
     build:
       context: ./sprint-management
       dockerfile: Dockerfile
