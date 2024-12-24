@@ -1,9 +1,9 @@
 version: '3'
 services:
   EurekaServer:
-    image: eureka-server:latest
+    image: EurekaServer:latest
     build:
-      context: ./eureka-server
+      context: ./EurekaServer
       dockerfile: Dockerfile
     ports:
       - "8761:8761"
