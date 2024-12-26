@@ -1,0 +1,32 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up JDK 21
+      uses: actions/setup-java@v2
+      with:
+        distribution: 'temurin'  # You can use 'temurin', 'zulu', 'adopt'
+        java-version: '21'
+
+    - name: Build with Maven
+      run: mvn clean install
+
+    - name: Run tests
+      run: mvn test
+
+    - name: Package application
+      run: mvn package
